@@ -13,13 +13,13 @@ Content-Type: application/json
 GET http://localhost:3000/posts
 
 ###Get a post by ID
-GET http://localhost:3000/posts/{postId}
+GET http://localhost:3000/posts/69664be940e026879eb78545
 
 ###Get a post by sender
-GET http://localhost:3000/posts/sender/{senderName}
+GET http://localhost:3000/posts/sender/Ofri and Amit
 
 ###Update a post by ID
-PUT http://localhost:3000/posts/{postId}
+PUT http://localhost:3000/posts/69664be940e026879eb78545
 Content-Type: application/json
 
 {
