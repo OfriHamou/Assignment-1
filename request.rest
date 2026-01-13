@@ -6,7 +6,7 @@ Content-Type: application/json
 
 {
   "content": "This is my first post",
-  "sender": "Ofri and Amit"
+  "sender": "Ofri and Amit2"
 }
 
 ###Get all posts
