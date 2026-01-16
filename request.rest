@@ -1,6 +1,32 @@
-###Posts APIs###
+###---Posts APIs---###
 
 ###Add a new post
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+  "content": "This is my first post",
+  "sender": "Ofri and Amit"
+}
+
+###Get all posts
+GET http://localhost:3000/posts
+
+###Get a post by ID
+GET http://localhost:3000/posts/{postId}
+
+###Get a post by sender
+GET http://localhost:3000/posts/sender/{senderName}
+
+###Update a post by ID
+PUT http://localhost:3000/posts/{postId}
+Content-Type: application/json
+
+{
+  "content": "This is my updated post content",
+  "sender": "Ofri and Amit"
+}
 
 
-###Comments APIs###
+
+###---Comments APIs---###
