@@ -15,9 +15,19 @@ const createComment = async (req, res) => {
     }
 };
 
+const getCommentsByPostId = async (req, res) => {
+    try {
+        const postId = req.params.Id;
+        const comments = await Comment.find({ "postId": postId });
+        res.status(200).json(comments);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+};
 
 
 
 module.exports = {
     createComment,
+    getCommentsByPostId,
 };
