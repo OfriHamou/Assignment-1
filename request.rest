@@ -42,3 +42,6 @@ Content-Type: application/json
 
 ###Get all comments for a specific post
 GET http://localhost:3000/posts/69664be940e026879eb78545/comments
+
+###Get a comment by ID
+GET http://localhost:3000/posts/comments/696babd4d58d1ce4ff12ec90
