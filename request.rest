@@ -45,3 +45,15 @@ GET http://localhost:3000/posts/69664be940e026879eb78545/comments
 
 ###Get a comment by ID
 GET http://localhost:3000/posts/comments/696babd4d58d1ce4ff12ec90
+
+###Update a comment by ID
+PUT http://localhost:3000/posts/comments/696babd4d58d1ce4ff12ec90
+Content-Type: application/json
+
+{
+  "content": "This is my updated comment content",
+  "sender": "Ami1t and Ofri1"
+}
+
+###Delete a comment by ID
+DELETE http://localhost:3000/posts/comments/696babd4d58d1ce4ff12ec90
