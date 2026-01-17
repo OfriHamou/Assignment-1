@@ -30,3 +30,12 @@ Content-Type: application/json
 
 
 ###---Comments APIs---###
+
+###Add a new comment to a post
+POST http://localhost:3000/posts/69664be940e026879eb78545/comments
+Content-Type: application/json
+
+{
+  "content": "This is a comment on the post",
+  "sender": "Commenter1"
+}
