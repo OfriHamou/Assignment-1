@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const postRoutes = require('./routes/postRoute');
+const commentRoutes = require('./routes/commentRoute');
 
 const PORT = 3000;
 // Create Express app
@@ -17,6 +18,7 @@ db.once('open', () => console.log('Connected to Database'));
 
 //Routes
 app.use('/posts', postRoutes);
+app.use('/posts', commentRoutes);
 
 //Start the server
 app.listen(PORT, () => {
