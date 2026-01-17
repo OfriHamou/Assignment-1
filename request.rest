@@ -55,4 +55,5 @@ Content-Type: application/json
   "sender": "Ami1t and Ofri1"
 }
 
-
+###Delete a comment by ID
+DELETE http://localhost:3000/posts/comments/696babd4d58d1ce4ff12ec90
