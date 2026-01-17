@@ -37,5 +37,8 @@ Content-Type: application/json
 
 {
   "content": "This is a comment on the post",
-  "sender": "Commenter1"
+  "sender": "Amit and Ofri"
 }
+
+###Get all comments for a specific post
+GET http://localhost:3000/posts/69664be940e026879eb78545/comments
