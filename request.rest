@@ -13,13 +13,13 @@ Content-Type: application/json
 GET http://localhost:3000/posts
 
 ###Get a post by ID
-GET http://localhost:3000/posts/69664be940e026879eb78545
+GET http://localhost:3000/posts/696b9dc4a47fa6602979d47a
 
 ###Get a post by sender
 GET http://localhost:3000/posts/sender/Ofri and Amit
 
 ###Update a post by ID
-PUT http://localhost:3000/posts/69664be940e026879eb78545
+PUT http://localhost:3000/posts/696b9dc4a47fa6602979d47a
 Content-Type: application/json
 
 {
@@ -32,28 +32,30 @@ Content-Type: application/json
 ###---Comments APIs---###
 
 ###Add a new comment to a post
-POST http://localhost:3000/posts/69664be940e026879eb78545/comments
+POST http://localhost:3000/comments
 Content-Type: application/json
 
 {
-  "content": "This is a comment on the post",
-  "sender": "Amit and Ofri"
+  "content": "This is my first comment",
+  "sender": "Amit1 and Ofri1",
+  "postId": "696b9dc4a47fa6602979d47a"
 }
 
 ###Get all comments for a specific post
-GET http://localhost:3000/posts/69664be940e026879eb78545/comments
+GET http://localhost:3000/comments?postId=696b9dc4a47fa6602979d47a
 
 ###Get a comment by ID
-GET http://localhost:3000/posts/comments/696babd4d58d1ce4ff12ec90
+GET http://localhost:3000/comments/696bc1f67111a7e5ca0d612c
 
 ###Update a comment by ID
-PUT http://localhost:3000/posts/comments/696babd4d58d1ce4ff12ec90
+PUT http://localhost:3000/comments/696bc1f67111a7e5ca0d612c
 Content-Type: application/json
 
 {
   "content": "This is my updated comment content",
-  "sender": "Ami1t and Ofri1"
+  "sender": "Amit1 and Ofri1",
+  "postId": "696b9dc4a47fa6602979d47a"
 }
 
 ###Delete a comment by ID
-DELETE http://localhost:3000/posts/comments/696babd4d58d1ce4ff12ec90
+DELETE http://localhost:3000/comments/696bc1f67111a7e5ca0d612c

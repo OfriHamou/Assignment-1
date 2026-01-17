@@ -18,7 +18,7 @@ db.once('open', () => console.log('Connected to Database'));
 
 //Routes
 app.use('/posts', postRoutes);
-app.use('/posts', commentRoutes);
+app.use('/comments', commentRoutes);
 
 //Start the server
 app.listen(PORT, () => {
